@@ -43,7 +43,7 @@ void insert_node(int data)
     next = head->next;
     while(current != NULL)
     {
-        if(data > current->data && head->next == NULL)
+        if(data > current->data )
         {
             /* inserting at head */
 
@@ -106,10 +106,7 @@ void insert_node(int data)
         else
         {
             /* moving the pointer */
-            if(current->next != NULL)
-            {
-                current = current->next;
-            }
+            current = current->next;
             next = next->next;
         }
 
